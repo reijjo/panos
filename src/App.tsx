@@ -11,11 +11,9 @@ const App = () => {
     if (!isNaN(Number(value))) {
       setSaldo(value);
     }
-    console.log("saldo", saldo);
   };
 
   const handlePanos = (saldo: number) => {
-    console.log("saldo", saldo);
     const paljon: number = Math.floor(Number(saldo) * 0.8 * 0.05);
     if (paljon < 1) {
       setPanos("Pitäs olla ainakin 25 €.");
